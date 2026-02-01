@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>PIG</h1>
+      <p class="desc">RACE TO 100</p>
+    </header>
+    <main>
+      <div class="game-grid">
+        <section class="player player--0 player--active">
+          <div class="player-info">
+            <p id="name--0">PLAYER 1</p>
+            <h1 id="score--0">0</h1>
+            <p class="font-small">POINTS</p>
+          </div>
+          <div class="current">
+            <p>CURRENT</p>
+            <h2 id="current--0">+0</h2>
+          </div>
+        </section>
+        <section class="control-column">
+          <div class="dice-container">
+            <div class="dice-holder">DICE</div>
+            <img
+              src="images/dice-1.svg"
+              alt="Playing dice"
+              class="dice hidden"
+            />
+          </div>
+          <button class="btn btn--roll">ROLL</button>
+          <button class="btn btn--hold" disabled>HOLD</button>
+        </section>
+        <section class="player player--1">
+          <div class="player-info">
+            <p id="name--1">PLAYER 2</p>
+            <h1 id="score--1">0</h1>
+            <p class="font-small">POINTS</p>
+          </div>
+          <div class="current">
+            <p>CURRENT</p>
+            <h2 id="current--1">0</h2>
+          </div>
+        </section>
+      </div>
+      <p class="desc">ROLL TO ACCUMULATE • HOLD TO SAVE • LOSE ALL ON 1</p>
+    </main>
+
+    <button class="btn--new">
+      <img src="images/reset.svg" />
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
