@@ -247,7 +247,7 @@ main {
   background-color: #bde2bd;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
   .game-grid {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
@@ -264,5 +264,42 @@ main {
 
   .btn {
     width: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    padding: 30px;
+  }
+
+  header {
+    margin-bottom: 40px;
+  }
+
+  header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+
+  .game-grid {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .player p {
+    font-size: 12px;
+  }
+
+  .player-info h1 {
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  .current h2 {
+    font-size: 20px;
   }
 }
