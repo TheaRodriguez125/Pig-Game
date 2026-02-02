@@ -25,6 +25,8 @@ const init = function () {
   btnRoll.disabled = false;
   btnHold.disabled = true;
 
+  btnRoll.focus();
+
   score0El.textContent = 0;
   score1El.textContent = 0;
   current0El.textContent = '+0';
@@ -53,6 +55,7 @@ const switchPlayer = function () {
   player1El.classList.toggle('player--active');
 
   btnHold.disabled = true;
+  btnRoll.focus();
 };
 
 btnRoll.addEventListener('click', function () {
